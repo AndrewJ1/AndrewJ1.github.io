@@ -1,11 +1,11 @@
 # Site settings
-author: Andrew J
-title: 
+author: Andrew Jamieson
+title: Module 1 - exploratory data analysis
 header-img: img/home-bg.png
 email: asjamieson@gmail.com
-copyright_name: Andrew J
+copyright_name: Andrew Jamieson
 description: > # this means to ignore newlines until "baseurl:"
-  
+  How I cleaned the data and built features for the Module 1 project
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  AndrewJ1
