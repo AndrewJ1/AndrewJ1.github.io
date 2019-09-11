@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Choosing Research Topics"
-date:       2019-09-11 20:10:20 +0000
+date:       2019-09-11 16:10:21 -0400
 permalink:  choosing_research_topics
 ---
 
