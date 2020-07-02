@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "What if a robot could laugh at your jokes?"
-date:       2020-07-02 19:56:10 +0000
+date:       2020-07-02 15:56:10 -0400
 permalink:  what_if_a_robot_could_laugh_at_your_jokes
 ---
 
@@ -52,21 +52,21 @@ Then what actually is a laugh? I know it when I hear it, but do you measure when
 
 Tagging laughs meant viewing each comedy set in detail. I decided to start with the comedians that I had the most transcripts for. After finishing just George Carlin and Dave Chappelle, I blew out my time budget.
 
-![Dataframe](https://imgur.com/a/EyAgbIY)
+![Dataframe](https://imgur.com/a/EyAgbIY.png)
 
 **Exploring the Data**
 
 It turns out that my dataset was somewhat imbalanced. Laughter was about twice as common as non-laughter. I initially brought in some dummy text to balance the data, but it created a new problem – predicting laughter became too easy. I applied some real world thinking and decided that I was ok with the imbalance. My goal was to predict laughter out of a comedy set, not out of text in general. It makes sense that there should be more laughter than not. That’s the point of a comedy show … if laughter was rare, that’d be the end of that comedian. 
 
-![Count](https://imgur.com/08rC6Bu)
+![Count](https://imgur.com/08rC6Bu.png)
 
-![Carlin](https://imgur.com/a/deDrGVg)
+![Carlin](https://imgur.com/a/deDrGVg.png)
 
 **Model the Data**
 
 I started with a basic regression model, and found that it was pretty good at predicting laughter … really good in fact. It decided that almost every line was funny. My deepest fears were confirmed. Robots were indeed ineffective connoisseurs of comedy.
 
-![Regression](https://imgur.com/a/9fjkaeL)
+![Regression](https://imgur.com/a/9fjkaeL.png)
 
 Not giving up yet, I still had a couple of tricks up my sleeve. Time to bring out the neural networks. A basic Convolutional Neural Network worked remarkably well – returning an accuracy of 82%. RNN, LSTM, GRU models did not fare so well. My thoughts are that this dataset was too small for these models to be effective.
 
@@ -85,7 +85,7 @@ model.add(Dropout(0.5))
 model.add(Dense(1, activation='sigmoid'))
 ```
 
-![CNN](https://imgur.com/a/ZY9NyK8)
+![CNN](https://imgur.com/a/ZY9NyK8.png)
 
 **Interpreting the Results**
 
